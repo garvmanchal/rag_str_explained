@@ -24,7 +24,7 @@ def chunk_document(source_id : str , heading : str, text : str ,
 
     return[{
         "chunk_id" : f"{source_id} -c{i}",
-        "text" : pieces,
+        "text" : piece,
         "source_id" : source_id,
         "heading" :heading,
         "permission_scope" : permission_scope, 
