@@ -28,7 +28,11 @@ class InVectorDB:
         scored = sorted(candidates, key = lambda r : cosine_sim(query_vector, r["vector"]), reverse = True)
         return scored[:limit]
 
-    '''
+
+vector_db = InVectorDB()
+
+
+'''
     Take the user's query vector → filter allowed documents → calculate similarity
       → sort by similarity → return the top results.
 
@@ -41,4 +45,4 @@ class InVectorDB:
       means:
       Compare the user's query vector with the document's vector.
 
-    '''
+''' 

@@ -19,6 +19,7 @@ def chunk_text(text : str , chunk_word : int = 60 , overlap_word : int = 15)-> l
 
 def chunk_document(source_id : str , heading : str, text : str , 
                    permission_scope : str , updated_at : str , content_type : str = "policy") -> list[dict]:
+    
     pieces = chunk_text(text)
 
     return[{
