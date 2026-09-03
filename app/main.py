@@ -20,3 +20,4 @@ async def startup():
 @app.get("/debug/rows")
 def debug_rows():
     return vector_db.rows
+    
