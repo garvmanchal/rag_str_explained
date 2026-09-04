@@ -1,6 +1,6 @@
 
 
-async def call_llm(chunks : list[dict]) -> dict :
+async def call_llm(prompt : str ,chunks : list[dict]) -> dict :
     if not chunks:
         return{"answer": "I could not find relevent policy content.",
                "citations": [], "needs_human_review" : True}

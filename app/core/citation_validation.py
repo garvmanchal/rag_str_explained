@@ -1,6 +1,6 @@
 
 def validate_citation(answer : dict , retrieved_chunks : list[dict]):
-    label_to_id = {c['citations_lable'] : c['chunk_id'] for c in retrieved_chunks }
+    label_to_id = {c['citations_label'] : c['chunk_id'] for c in retrieved_chunks }
     cited = set(answer.get('citations',[]))
 
     if not cited and not answer.get("needs_human_review"):
